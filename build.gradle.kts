@@ -14,6 +14,7 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     maven(url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    maven(url = "https://repo.md-5.net/content/groups/public/")
 }
 
 val shadowImplementation: Configuration by configurations.creating
@@ -25,6 +26,7 @@ dependencies {
     shadowImplementation("com.github.sya-ri:EasySpigotAPI:2.3.0") {
         exclude(group = "org.spigotmc", module = "spigot-api")
     }
+    implementation("LibsDisguises:LibsDisguises:10.0.24")
 }
 
 configure<KtlintExtension> {
@@ -41,4 +43,5 @@ configure<BukkitPluginDescription> {
     version = project.version.toString()
     main = "com.github.syari.yululi.imentity.Main"
     apiVersion = "1.16"
+    depend = listOf("LibsDisguises")
 }

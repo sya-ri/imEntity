@@ -3,6 +3,10 @@
 
 エンティティに変身できるようになる。変身すると特殊効果が付与される。
 
+## 前提プラグイン
+
+- [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/)
+
 ## Gradle Task
 
 ### ktlintFormat
