@@ -17,6 +17,7 @@ class Main : JavaPlugin() {
 
     override fun onEnable() {
         CustomInventory.onEnable(this)
+        EventListener.register()
         command("d") {
             execute {
                 (sender as? Player)?.let(DisguiseInventory::open)

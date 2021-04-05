@@ -3,6 +3,7 @@ package com.github.syari.yululi.imentity.type
 import me.libraryaddict.disguise.disguisetypes.DisguiseType
 import org.bukkit.Material
 import org.bukkit.entity.Player
+import org.bukkit.event.entity.EntityDamageEvent
 import org.bukkit.potion.PotionEffectType
 
 object Bat : DisguiseEntityType {
@@ -11,6 +12,7 @@ object Bat : DisguiseEntityType {
     override val potionEffects = mapOf(
         PotionEffectType.NIGHT_VISION to 0
     )
+    override val damageMultiplier = mapOf<EntityDamageEvent.DamageCause, Double>()
     override val icon = Material.BAT_SPAWN_EGG
     override val displayName = "コウモリ"
     override val description = "空を飛ぶことができ、夜でも周りがよく見える"

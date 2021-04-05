@@ -7,6 +7,7 @@ import me.libraryaddict.disguise.disguisetypes.MobDisguise
 import org.bukkit.Material
 import org.bukkit.attribute.Attribute
 import org.bukkit.entity.Player
+import org.bukkit.event.entity.EntityDamageEvent
 import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
 
@@ -14,6 +15,7 @@ interface DisguiseEntityType {
     val disguiseType: DisguiseType
     val health: Double
     val potionEffects: Map<PotionEffectType, Int>
+    val damageMultiplier: Map<EntityDamageEvent.DamageCause, Double>
     val icon: Material
     val displayName: String
     val description: String
