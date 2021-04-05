@@ -23,7 +23,7 @@ interface DisguiseEntityType {
         get() = """
             &a$description
             
-            &6体力: &c${"❤".repeat(health.toInt())}
+            &6体力: &c${"||".repeat(health.toInt())}
         """.trimIndent()
 
     fun init(player: Player) {
