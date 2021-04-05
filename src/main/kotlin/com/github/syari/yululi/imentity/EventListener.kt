@@ -3,6 +3,8 @@ package com.github.syari.yululi.imentity
 import com.github.syari.spigot.api.event.events
 import com.github.syari.yululi.imentity.Main.Companion.plugin
 import com.github.syari.yululi.imentity.type.DisguiseEntityType.Companion.disguiseEntityType
+import com.github.syari.yululi.imentity.type.Parrot
+import com.github.syari.yululi.imentity.type.Wolf
 import org.bukkit.entity.Player
 import org.bukkit.event.entity.EntityDamageEvent
 
@@ -16,5 +18,7 @@ object EventListener {
                 it.damage *= damageMultiplier
             }
         }
+        Parrot.registerEvents()
+        Wolf.registerEvents()
     }
 }
