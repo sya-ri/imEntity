@@ -7,6 +7,11 @@
 
 - [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/)
 
+## 使い方
+
+1. `/d` というコマンドを実行すると、変身できるエンティティ一覧が表示される。
+2. 選択すると、そのエンティティに変身でき、特殊効果が付与される。
+
 ## Gradle Task
 
 ### ktlintFormat
